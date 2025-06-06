@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmet Yiğit - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <meta name="description" content="Ahmet Yiğit - Frontend Developer Portfolio. Projects, skills, and contact information.">
+  <meta name="keywords" content="Frontend, Portfolio, Ahmet Yiğit, Web Developer, JavaScript, HTML, CSS">
+  <meta name="author" content="vr0cks web design">
+</head>
+<body>
+  <!-- Scroll Progress Bar (Sayfa kaydırma ilerlemesini gösterir) -->
+  <div class="scroll-progress"></div>
+
+  <!-- =========================
+       Navbar (Üst Menü)
+       ========================= -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">vr0cks web design</a>
+      </div>
+      <!-- Masaüstü Menü -->
+      <ul class="nav-links desktop-menu">
+        <li><a href="#about" data-key="nav_about">About Me</a></li>
+        <li><a href="#projects" data-key="nav_projects">Projects</a></li>
+        <li><a href="#contact" data-key="nav_contact">Contact Me</a></li>
+        <li><a href="#hire" data-key="nav_hire">Hire Me</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="language-switch">
+          <button id="btn-tr"><img src="assets/tr.png" alt="TR" /></button>
+          <button id="btn-en"><img src="assets/gb.png" alt="EN" /></button>
+        </div>
+      </div>
+      <!-- Mobil Menü Açma Butonu -->
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+    <!-- Mobil Menü -->
+    <ul class="nav-links mobile-menu" id="mobile-menu">
+      <li><a href="#about" data-key="nav_about">About Me</a></li>
+      <li><a href="#projects" data-key="nav_projects">Projects</a></li>
+      <li><a href="#contact" data-key="nav_contact">Contact Me</a></li>
+      <li><a href="#hire" data-key="nav_hire">Hire Me</a></li>
+    </ul>
+  </header>
+
+  <!-- =========================
+       Hero Alanı (Açılış)
+       ========================= -->
+  <header class="hero">
+    <div class="hero-content">
+
+      <div class="hero-text">
+        <h1 data-key="hero_title">Hi, I'm Ahmet Yiğit</h1>
+        <p data-key="hero_subtitle">A passionate frontend developer crafting elegant user experiences.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn" data-key="btn_hire">Hire Me</a>
+          <a href="./assets/Resume.pdf" download class="btn btn-outline" data-key="btn_cv">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- =========================
+       Hakkımda Bölümü
+       ========================= -->
+  <section id="about" class="section fade-in">
+    <h2 data-key="about_title">About Me</h2>
+    <div class="about-wrapper">
+      <!-- Profil Fotoğrafı -->
+      <div class="about-photo">
+        <img src="assets/bn.png" alt="Ahmet Yiğit" style="width:100%;height:auto;object-fit:cover;" />
+      </div>
+      <!-- Hakkımda Yazısı -->
+      <div class="about-text">
+        <p data-key="about_text">
+          Merhaba! Ben Ahmet Yiğit, 20 yaşındayım ve Türk Hava Kurumu Üniversitesi'nde Yönetim Bilişim Sistemleri bölümü öğrencisiyim.<br>
+          5 yıldır yazılım sektöründeyim, son 3 yıldır ise frontend geliştirici olarak web tasarımı ile ilgileniyorum.<br>
+          14 yıldır profesyonel bir derneğe bağlı olarak izcilik yapıyorum ve 2 yıl önce lider lisansımı aldım.<br>
+          Ayrıca aktif olarak okulumun Amerikan futbolu takımında oynuyorum.<br>
+          Kodlamanın dışında fotoğrafçılık ve doğa yürüyüşleriyle ilgileniyorum. Sürekli öğrenmeye ve kendimi geliştirmeye inanıyorum.
+        </p>
+      </div>
+      <!-- Yetenekler ve Soft Skills -->
+      <div class="about-tags">
+        <h4 data-key="skills_title">Skills & Focus</h4>
+        <div class="tag-list">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          <span data-key="tag_responsive">Responsive Design</span>
+          <span data-key="tag_uiux">UI/UX</span>
+          <span>Git</span>
+          <span data-key="tag_performance">Web Performance</span>
+        </div>
+        <h4 style="margin-top: 2rem;" data-key="soft_title">Soft Skills</h4>
+        <div class="tag-list">
+          <span data-key="tag_problem">Problem Solving</span>
+          <span data-key="tag_team">Teamwork</span>
+          <span data-key="tag_comm">Communication</span>
+          <span data-key="tag_time">Time Management</span>
+          <span data-key="tag_critical">Critical Thinking</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         Zaman Çizelgesi (Timeline)
+         ========================= -->
+    <div class="timeline-container fade-in">
+      <div class="timeline-item">
+        <div class="timeline-dot"><span>👶</span></div>
+        <div class="timeline-content">
+          <h4>2005</h4>
+          <p data-key="timeline_2005">Born with curiosity. Screens and technology always caught my attention as a kid.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"><span>💻</span></div>
+        <div class="timeline-content">
+          <h4>2013 – 2021</h4>
+          <p data-key="timeline_2013_2021">Got early exposure to computers thanks to my family's workplace. I started exploring and trying to learn programming on my own.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"><span>🚀</span></div>
+        <div class="timeline-content">
+          <h4>2022 (Age 17)</h4>
+          <p data-key="timeline_2022">Got my first personal computer and dove deep into the world of software. This was the true beginning of my journey.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"><span>🧑‍💻</span></div>
+        <div class="timeline-content">
+          <h4>2023 – Present</h4>
+          <p data-key="timeline_2023_freelance"><strong>Freelance Frontend Developer</strong> – Working on real-world projects and constantly leveling up.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"><span>🎓</span></div>
+        <div class="timeline-content">
+          <h4>2023 – Present</h4>
+          <p data-key="timeline_2023_mis"><strong>MIS Student</strong> @ UTAA University</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       Projeler Bölümü
+       ========================= -->
+  <section id="projects" class="section">
+    <h2 data-key="projects_title">Projects</h2>
+    <div class="project-grid">
+      <!-- Todo App Card -->
+      <div class="project-card">
+        <img src="assets/to do.jpg" alt="Todo App Screenshot" style="width:100%;height:180px;object-fit:cover;border-radius:10px 10px 0 0;">
+        <div class="project-card-content" style="padding:1rem;">
+          <h3 data-key="todo_title">Todo App</h3>
+          <p data-key="todo_desc">A minimalistic todo app with localStorage support and a clean UI.</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://vr0cks.github.io/to-do-/" class="btn-sm" data-key="btn_view" target="_blank">View Project</a>
+        </div>
+      </div>
+      <!-- Alpine Hunting Store Card -->
+      <div class="project-card">
+        <img src="assets/alpine.jpg" alt="Alpine Hunting Store Screenshot" style="width:100%;height:180px;object-fit:cover;border-radius:10px 10px 0 0;">
+        <div class="project-card-content" style="padding:1rem;">
+          <h3>Alpine Hunting Store</h3>
+          <p>A modern and user-friendly e-commerce site for outdoor and hunting equipment. <strong>(Still in progress)</strong></p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span><span>React</span>
+          </div>
+          <a href="#" class="btn-sm" disabled style="pointer-events:none;opacity:0.6;">In Progress</a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="https://github.com/Vr0cks" target="_blank" class="btn btn-outline" data-key="btn_github_more">
+        See more on GitHub
+      </a>
+    </div>
+  </section>
+
+
+  <!-- =========================
+       İletişim Bölümü
+       ========================= -->
+  <section id="contact" class="section">
+    <h2 data-key="contact_title">Contact Me</h2>
+    <form id="contact-form" action="https://formspree.io/f/mdkznpvz" method="POST">
+      <label for="name" data-key="label_name">Your name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email" data-key="label_email">Your email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message" data-key="label_message">Your message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" data-key="btn_send">Send</button>
+    </form>
+  </section>
+
+  <!-- =========================
+       Footer (Alt Bilgi)
+       ========================= -->
+  <footer>
+    <div class="footer-social">
+      <a href="https://github.com/Vr0cks" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/ahmet-yiğit-canlı/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://x.com/ahmetcanli1907" target="_blank"><img src="assets/X.jpeg" alt="Twitter"></a>
+      <!-- Diğer sosyal medya ikonlarını da ekleyebilirsin -->
+    </div>
+    <p>&copy; 2025 Copyright by vr0cks web design</p>
+  </footer>
+
+  <!-- =========================
+       Scriptler
+       ========================= -->
+  <script src="script.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  function onScroll() {
+    let scrollPos = window.scrollY + 120; // Navbar yüksekliği kadar offset
+    sections.forEach(section => {
+      if (
+        scrollPos >= section.offsetTop &&
+        scrollPos < section.offsetTop + section.offsetHeight
+      ) {
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + section.id) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  }
+
+  window.addEventListener("scroll", onScroll);
+  onScroll(); // Sayfa yüklenince de çalışsın
+});
+</script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  function revealTimeline() {
+    document.querySelectorAll('.timeline-item').forEach(item => {
+      const rect = item.getBoundingClientRect();
+      if(rect.top < window.innerHeight - 80) {
+        item.classList.add('visible');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealTimeline);
+  revealTimeline();
+});
+</script>
+<script>
+// document.getElementById('contact-form').addEventListener('submit', function(e){
+//   e.preventDefault();
+//   document.getElementById('thanks-message').style.display = 'block';
+//   this.reset();
+// });
+</script>
+</body>
+</html>
