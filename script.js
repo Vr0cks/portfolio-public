@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
     translate('en');
   }
 
-  // === ALTERNATİF: IP tabanlı ülke kontrolü (aktif değil, istersen açabilirim) ===
+  // === ALTERNATİF: IP tabanlı ülke kontrolü (aktif değil, istersem açabilirim) ===
   /*
   fetch('https://ipapi.co/json/')
     .then(res => res.json())

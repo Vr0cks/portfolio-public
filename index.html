@@ -73,7 +73,7 @@
     <div class="about-wrapper">
       <!-- Profil Fotoğrafı -->
       <div class="about-photo">
-        <img src="assets/ben 2.jpg" alt="Ahmet Yiğit" />
+        <img src="assets/bn.png" alt="Ahmet Yiğit" style="width:100%;height:auto;object-fit:cover;" />
       </div>
       <!-- Hakkımda Yazısı -->
       <div class="about-text">
@@ -154,30 +154,29 @@
   <section id="projects" class="section">
     <h2 data-key="projects_title">Projects</h2>
     <div class="project-grid">
-      <!-- 3 favori projen -->
+      <!-- Todo App Card -->
       <div class="project-card">
-        <h3 data-key="todo_title">Todo App</h3>
-        <p data-key="todo_desc">A minimalistic todo app with localStorage support and a clean UI.</p>
-        <div class="tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <img src="assets/to do.jpg" alt="Todo App Screenshot" style="width:100%;height:180px;object-fit:cover;border-radius:10px 10px 0 0;">
+        <div class="project-card-content" style="padding:1rem;">
+          <h3 data-key="todo_title">Todo App</h3>
+          <p data-key="todo_desc">A minimalistic todo app with localStorage support and a clean UI.</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://vr0cks.github.io/to-do-/" class="btn-sm" data-key="btn_view" target="_blank">View Project</a>
         </div>
-        <a href="#" class="btn-sm" data-key="btn_view">View Project</a>
       </div>
+      <!-- Alpine Hunting Store Card -->
       <div class="project-card">
-        <h3 data-key="portfolio_title">Portfolio Site</h3>
-        <p data-key="portfolio_desc">A personal portfolio website built for showcasing projects and resume.</p>
-        <div class="tags">
-          <span>HTML</span><span>SCSS</span><span>Vanilla JS</span>
+        <img src="assets/alpine.jpg" alt="Alpine Hunting Store Screenshot" style="width:100%;height:180px;object-fit:cover;border-radius:10px 10px 0 0;">
+        <div class="project-card-content" style="padding:1rem;">
+          <h3>Alpine Hunting Store</h3>
+          <p>A modern and user-friendly e-commerce site for outdoor and hunting equipment. <strong>(Still in progress)</strong></p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="#" class="btn-sm" disabled style="pointer-events:none;opacity:0.6;">In Progress</a>
         </div>
-        <a href="#" class="btn-sm" data-key="btn_view">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3 data-key="weather_title">Weather App</h3>
-        <p data-key="weather_desc">A simple weather app using HTML, CSS, and JS. Shows real-time weather data.</p>
-        <div class="tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
-        <a href="#" class="btn-sm" data-key="btn_view">View Project</a>
       </div>
     </div>
     <div style="text-align:center; margin-top:2rem;">
@@ -273,14 +272,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
   document.getElementById('thanks-message').style.display = 'block';
   this.reset();
 });
-</script>
-<button id="theme-toggle" aria-label="Tema Değiştir">🌙</button>
-<script>
-const btn = document.getElementById('theme-toggle');
-btn.onclick = () => {
-  document.body.classList.toggle('light-theme');
-  btn.textContent = document.body.classList.contains('light-theme') ? '🌞' : '🌙';
-};
+
 </script>
 </body>
 </html>
